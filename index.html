@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+        body{
+            background-color: #1C1C1C;
+        }
+        #container{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        #box{
+            margin-top: 5em;
+            border: 1px solid black;
+            width: 40em;
+            border-radius: 10px;
+            background-color: 	#363636;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        hr{
+            width: 85%;
+        }
+        #box h1,a{
+            text-align: center;
+            font-family: 'Rubik';
+            color: #4682B4;
+            text-decoration: none;
+        }
+        #box h1:hover{
+            color: 	#B0C4DE;
+            text-decoration: underline;
+        }
+        img{
+            width: 30em;
+            margin: auto ;
+
+        }
+        #box p{
+            text-align: center;
+            font-family: 'Rubik';
+            font-size: 18px;
+        }
+
+        button{
+            padding: 10px 20px;
+            margin:10px;
+            border-radius: 50px;
+            float: right;
+            background-color: #4682B4;
+            font-family: 'Rubik';
+            
+        }
+        button:hover{
+            background-color: 	#778899;
+        }
+        @media screen and (max-width: 700px){
+            
+            img{
+                padding-left: 10px;
+                padding-right: 10px;
+                margin: auto;
+                width: 18em;
+            }
+            #box{
+                width: 25em;
+                margin: auto;
+            }
+            #container{
+                margin-top: 20%;
+            }
+            
+        }
+        @media screen and (max-width: 360px){
+            img{
+                width: 15em;
+            }
+        }
+        @media screen and (max-width: 320px){
+            #container{
+                margin: 0;
+            }
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="box">
+            <a href="https://fieb.edu.br/curso/informatica/" target="_blank">
+                <h1>Curso técnico de informática</h1>
+            </a>
+            <hr>
+            <img src="./imagens/imagem1.jpg" alt="programador">
+            <p>O técnico em Informática é especializado tanto em montagem e manutenção de computadores, quanto em linguagens de programação e pode atuar em diversas áreas da Tecnologia da Informação.</p>
+                <button onclick="window.location.href='login.html'">Acessar</button>
+        </div>
+    </div>
+</body>
+</html>

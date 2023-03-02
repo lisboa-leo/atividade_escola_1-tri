@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <title>Login</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+        body{
+            background-color: #1C1C1C;
+        }
+        #container{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        #box{
+            margin-top: 5em;
+            border: 1px solid black;
+            width: 30em;
+            height: 30em;
+            border-radius: 10px;
+            background-color: 	#363636;
+        }
+
+        #box h1{
+            padding-left: 1em;
+            font-family: 'Rubik';
+            color: #a6a4a4;
+            margin-bottom: 50px;
+        }
+        
+        form{
+            display: block;
+            flex-direction: column;
+            padding: 25px;
+        }
+
+        #nome, #senha{
+            border: none;
+            outline: none;
+            font-size: 16px;
+            border-bottom: 2px solid #a6a4a4;
+            border-top: 2px solid transparent;
+            background-color: #363636;
+            width: 100%;
+            height: 50px;
+            margin-bottom: 30px;
+        }
+        #btn-env, #btn-lim{
+            margin: auto;
+            width: 7em;
+            padding: 7px;
+            border-radius: 5px;
+            background-color: #a6a4a4;
+            color: #1C1C1C;
+            background-color: #a6a4a4;
+            color: #1C1C1C;
+            margin-bottom: 4em;
+        }
+        #btn{
+            display: flex;
+            flex-direction: row;
+        }
+        #nome:is(:focus, :valid), #senha:is(:focus, :valid){
+        border-bottom-color: #4070f4;
+        }
+        #btn-env:hover, #btn-lim:hover{
+            background-color: #778899;
+        }
+        
+        input{
+            color: #ffffff;
+        }
+        input:-webkit-autofill,
+        select:-webkit-autofill {
+        -webkit-text-fill-color: #ffffff;
+        -webkit-box-shadow: 0 0 0px 10em #363636 inset;
+        }
+        a{
+            font-size: 18px;
+            font-family: 'Rubik';
+            color: #a6a4a4;
+            padding-left: 30px;
+           justify-content: start;
+        }
+        a:hover{
+            color: #778899;
+        }
+        @media screen and (max-width: 450px){
+            #btn-env, #btn-limp{
+                margin: 0;
+            }
+        }
+        
+
+</style>
+<body>
+    <div id="container">
+        <div id="box">
+            <h1>Login</h1>
+            <form action="listaprof.html">
+
+                <input type="text" name="nome" id="nome" placeholder="Digite o seu Nome" required>
+                <input type="password" name="senha" id="senha" placeholder="Digite a sua senha" required>
+                <div id="btn">
+                    <input type="submit" id="btn-env" value="Enviar" >
+                    <input type="reset" id="btn-lim" value="Limpar">
+                </div>
+            </form>
+                <a href="index.html" id="vtr">Voltar</a>
+    </div>
+</body>
+</html>

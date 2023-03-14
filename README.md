@@ -12,6 +12,6 @@ A terceira página foi dedicada a mostrar a grade curricular do segundo ano do e
 
 Embora tenha sido um projeto relativamente simples, eu aprendi muito sobre as linguagens HTML e CSS durante o processo. Aprendi a criar estruturas básicas de páginas, a formatar textos e imagens e a usar cores e fontes para tornar as páginas mais atraentes. Acredito que essas habilidades serão valiosas à medida que eu avançar em minha jornada de programação.
 
-Obrigado por ler sobre o meu projeto e espero que isso inspire outras pessoas a experimentar a programação.
+Obrigado por ler sobre o meu projeto e espero que isso inspire outras pessoas a experimentar a programação. :computer:
 
-acesse : https://gradecurricular2ano.bohr.io
+:notebook_with_decorative_cover: acesse : https://gradecurricular2ano.bohr.io

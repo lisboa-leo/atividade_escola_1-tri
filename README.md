@@ -1,4 +1,4 @@
-# :school: Atividade da Escola ITB Belval
+## :school: Atividade da Escola ITB Belval
 
 Olá pessoal,
 
@@ -12,7 +12,7 @@ A terceira página foi dedicada a mostrar a grade curricular do segundo ano do e
 
 Embora tenha sido um projeto relativamente simples, eu aprendi muito sobre as linguagens HTML e CSS durante o processo. Aprendi a criar estruturas básicas de páginas, a formatar textos e imagens e a usar cores e fontes para tornar as páginas mais atraentes. Acredito que essas habilidades serão valiosas à medida que eu avançar em minha jornada de programação.
 
-## ✔️ Linguagens Utilizadas
+### ✔️ Linguagens Utilizadas
 
 - ``HTML``
 - ``CSS``

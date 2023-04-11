@@ -1,0 +1,318 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+body{
+    background-color: #1C1C1C;
+}
+
+*{
+    box-sizing: border-box;
+    font-family: 'Rubik';
+}
+
+/*Index*/
+#container-index{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+}
+#box-index{
+    margin-top: 2em;
+    border: 1px solid black;
+    width: 40em;
+    border-radius: 10px;
+    background-color: 	#363636;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+hr{
+    width: 85%;
+}
+#box-index h1,a{
+    text-align: center;
+    font-family: 'Rubik';
+    color: #4682B4;
+    text-decoration: none;
+}
+#box-index h1:hover{
+    color: 	#B0C4DE;
+    text-decoration: underline;
+}
+
+#box-index img{
+    width: 30em;
+    margin: auto ;
+
+}
+#box-index p{
+    text-align: center;
+    font-family: 'Rubik';
+    font-size: 18px;
+}
+
+#box-index button{
+    padding: 10px 20px;
+    margin:10px;
+    border-radius: 50px;
+    float: right;
+    background-color: #4682B4;
+    font-family: 'Rubik';
+    
+}
+#box-index button:hover{
+    background-color: 	#778899;
+}
+/*Fechamento Index*/
+
+
+/*Formulario*/
+#container-login{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+}
+#box-login{
+    margin-top: 5em;
+    border: 1px solid black;
+    width: 30em;
+    height: 30em;
+    border-radius: 10px;
+    background-color: 	#fff;
+}
+
+#box-login h1{
+    padding-left: 1em;
+    font-family: 'Rubik';
+    color: #a6a4a4;
+    margin-bottom: 50px;
+}
+
+#box-login form{
+    display: block;
+    flex-direction: column;
+    padding: 25px;
+}
+
+#nome, #senha{
+    border: none;
+    outline: none;
+    font-size: 16px;
+    border-bottom: 2px solid #a6a4a4;
+    border-top: 2px solid transparent;
+    width: 100%;
+    height: 50px;
+    margin-bottom: 30px;
+}
+#btn-env, #btn-lim{
+    margin: auto;
+    width: 7em;
+    padding: 7px;
+    border-radius: 5px;
+    background-color: #a6a4a4;
+    color: #1C1C1C;
+    margin-bottom: 4em;
+}
+#btn{
+    display: flex;
+    flex-direction: row;
+}
+#nome:is(:focus, :valid), #senha:is(:focus, :valid){
+border-bottom-color: #4070f4;
+}
+#btn-env:hover, #btn-lim:hover{
+    background-color: #778899;
+}
+
+#box-login input{
+    color: #ffffff;
+}
+#box-index input:-webkit-autofill,
+#box-index select:-webkit-autofill {
+-webkit-text-fill-color: #ffffff;
+-webkit-box-shadow: 0 0 0 1000px #363636 inset;
+}
+
+#botoes{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 30px;
+}
+
+#botoes > p a, #botoes > a{
+    color: #B0C4DE;
+}
+
+#botoes > p a:hover, #botoes > a:hover{
+    color: #4070f4;
+    cursor: pointer;
+}
+
+#botoes > a, #botoes > p{
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+/*Fechamento formulario*/
+
+/*Listas*/
+#container-lista{
+    display: flex;
+    justify-content: center;
+    margin-top:5em;
+}
+#box-lista{
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: #363636;
+    margin: auto;
+}
+#box-lista table{
+    border-radius:10px;
+    width:20em;
+}
+#box-lista th, td{
+    font-size: 20px;
+    font-family: 'Rubik';
+    color: #fff;
+    padding: 5px;
+    text-align:center;
+}
+#box-lista a{
+    font-size: 22px;
+    font-family: 'Rubik';
+    color: #FFFAFA;
+    text-decoration: none;
+}
+#box-lista a:hover{
+    text-decoration: underline;
+
+}
+/*Fechamentos Listas*/
+
+/*Cadastro*/
+#container-cadastro{
+    display: flex;
+    justify-content: center;
+}
+
+#box-cadastro{
+    margin-top: 5em;
+    max-width: 430px;
+    width: 100%;
+}
+
+#box-cadastro > form{
+    border-radius: 10px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+}
+
+form input{
+    margin: 20px 0;
+    padding: 0 15px;
+    padding-bottom: 10px;
+    outline: none;
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #a6a4a4;
+    border-top: 2px solid transparent;
+    font-size: 16px;
+}
+
+#btn-cadastro{
+    padding: 15px 0;
+    background-color: #4070f4;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+#btn-cadastro:hover{
+    background-color: #4682B4;
+    color: #fff;
+    transform: scale(0.9);
+    cursor: pointer;
+}
+
+#box-cadastro input + span{
+    padding-right: 30px;
+}
+
+#box-cadastro input:invalid + span::after {
+    content: "✖";
+    padding-left: 10px;
+    color: #8b0000;
+}
+#box-cadastro input:valid + span::after {
+    content: "✓";
+    padding-left: 10px;
+    color: #009000;
+}
+
+#box-cadastro form > p {
+    text-align: center;
+    font-family: 18px;
+    margin: 0;
+}
+
+#box-cadastro form > p a:hover{
+    cursor: pointer;
+    color: #ffa600;
+}
+/*Fechamento cadastro*/
+
+@media screen and (max-width: 800px) {
+    #container-lista {
+    margin: 1em 2em;
+}
+}
+
+@media screen and (max-width: 700px){
+    #box-index img{
+        padding-left: 10px;
+        padding-right: 10px;
+        margin: auto;
+        width: 18em;
+    }
+    #box-index{
+        width: 25em;
+        margin: auto;
+    }
+    #container-index{
+        margin-top: 20%;
+    }
+    
+    #box-index img{
+        padding-left: 10px;
+        padding-right: 10px;
+        margin: auto;
+        width: 18em;
+    }
+    #box-index{
+        width: 25em;
+        margin: auto;
+    }
+    #container-index{
+        margin-top: 20%;
+    }
+    #box-cadastro{
+        margin-top: 1em;
+    }
+    
+}
+@media screen and (max-width: 360px){
+    #box-index img{
+        width: 15em;
+    }
+}
+@media screen and (max-width: 320px){
+    #container-index{
+        margin: 0;
+    }
+}

@@ -14,9 +14,16 @@
                 <h1>Cadastro</h1>
 
                 <input type="text" placeholder="Digite o Seu Nome" required>
-
+                <input type="text" placeholder="Digite o Nome da Mãe" required>
+                <div style="margin-bottom: 20px;">
+                    <label for="">Sexo:</label>
+                        <select name="" id="">
+                            <option value="Masculino">Masculino</option>
+                            <option value="Feminino">Feminino</option>
+                        </select>
+                    </div>
                 <input type="tel" placeholder="Digite o seu Telefone (xx x xxxx-xxxx) " required pattern="[0-9]{2} [0-9]{1} [0-9]{4}-[0-9]{4}"> <span id="validar"></span>
-
+                <input type="text" placeholder="Digite o seu CPF (xxx.xxx.xxx-xx)" required pattern="[0-9]{3}.[0-9]{3}.[0-9]{3}-[0-9]{2}" maxlength="14">
                 <input type="date" required>
 
                 <input type="email" placeholder="Digite o seu E-mail" required>

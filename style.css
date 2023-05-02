@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
 
 body{
-    background-color: #1C1C1C;
+    background-color: #8b8989;
 }
 
 *{
@@ -19,10 +19,10 @@ body{
 }
 #box-index{
     margin-top: 2em;
-    border: 1px solid black;
     width: 40em;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     border-radius: 10px;
-    background-color: 	#363636;
+    background-color: 	#fff;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -78,7 +78,7 @@ hr{
 }
 #box-login{
     margin-top: 5em;
-    border: 1px solid black;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     width: 30em;
     height: 30em;
     border-radius: 10px;
@@ -106,8 +106,8 @@ hr{
     border-top: 2px solid transparent;
     width: 100%;
     height: 50px;
-    margin-bottom: 30px;
 }
+
 #btn-env, #btn-lim{
     margin: auto;
     width: 7em;
@@ -115,8 +115,10 @@ hr{
     border-radius: 5px;
     background-color: #a6a4a4;
     color: #1C1C1C;
-    margin-bottom: 4em;
+    margin-top: 20px;
+    margin-bottom: 3em;
 }
+
 #btn{
     display: flex;
     flex-direction: row;
@@ -128,8 +130,13 @@ border-bottom-color: #4070f4;
     background-color: #778899;
 }
 
+#esqueci_senha{
+    display: flex;
+    justify-content: flex-end;
+}
+
 #box-login input{
-    color: #ffffff;
+    color: #000;
 }
 #box-index input:-webkit-autofill,
 #box-index select:-webkit-autofill {
@@ -143,6 +150,7 @@ border-bottom-color: #4070f4;
     align-items: center;
     margin-right: 30px;
 }
+
 
 #botoes > p a, #botoes > a{
     color: #B0C4DE;
@@ -201,6 +209,8 @@ border-bottom-color: #4070f4;
 }
 
 #box-cadastro{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 10px;
     margin-top: 5em;
     max-width: 430px;
     width: 100%;
@@ -259,6 +269,7 @@ form input{
     text-align: center;
     font-family: 18px;
     margin: 0;
+    margin-top: 20px;
 }
 
 #box-cadastro form > p a:hover{
@@ -266,6 +277,89 @@ form input{
     color: #ffa600;
 }
 /*Fechamento cadastro*/
+
+/*Esqueci a senha*/
+    #container-esqueci{
+        display: flex;
+        justify-content: center;
+    }
+    #box-esqueci{
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        border-radius: 10px;
+        margin-top: 5em;
+        max-width: 430px;
+        width: 100%;
+        background-color: #fff;
+        padding: 0 15px;
+    }
+
+    form input{
+        border: none;
+        border-bottom: 2px solid #a6a4a4;
+    }
+
+    #box-esqueci h1{
+        text-align: center;
+    }
+
+    #box-esqueci a{
+        text-align: start;
+        padding: 20px;
+    }
+
+
+    
+/*Fechamento*/
+
+/*Fale Conosco*/
+#container-fale{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+}
+#box-fale{
+    margin-top: 5em;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    width: 30em;
+    height: 39em;
+    border-radius: 10px;
+    background-color: 	#fff;
+}
+
+#box-fale h1{
+    padding-left: 1em;
+    font-family: 'Rubik';
+    color: #a6a4a4;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+#box-fale form{
+    display: block;
+    flex-direction: column;
+    padding: 25px;
+}
+
+input[type="submit"]{
+    width: 100px;
+    display: block;
+    margin: auto;
+    background-color: coral;
+    border: none;
+    border-radius: 10px;
+}
+
+#box-fale input:is(:focus, :valid){
+border-bottom-color: #4070f4;
+}
+
+#box-fale textarea{
+    margin-bottom: 10px;
+    width: 100%;
+}
+/*Fechamento Fale Conosco*/
 
 @media screen and (max-width: 800px) {
     #container-lista {

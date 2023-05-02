@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Fale Conosco</title>
+</head>
+<body>
+    <div id="container-fale">
+        <div id="box-fale">
+            <h1>Fale Conosoco</h1>
+            <form action="mailto:leonardolisboa@gmail.com">
+                <input type="text" placeholder="Digite o seu Nome" required>
+                <input type="email" placeholder="Digite o seu Email" required>
+                <input type="text" id="cpf" placeholder="Digite o seu CPF (xxx.xxx.xxx-xx)" onblur="cpf()" required pattern="[0-9]{3}.[0-9]{3}.[0-9]{3}-[0-9]{2}" maxlength="14">
+                
+                <div style="margin-bottom: 20px;">
+                <label for="">Assunto:</label>
+                    <select name="" id="">
+                        <option value="Duvida">Dúvida</option>
+                        <option value="Sujestao">Sujestão</option>
+                        <option value="Reclamacao">Reclamação</option>
+                    </select>
+                </div>
+                <textarea cols="30" rows="10" placeholder="Mensagem" required></textarea>
+                
+                <input type="submit" value="Enviar">
+
+                <div>
+                    <a href="index.html" id="vtr">Voltar</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
+
+<script>
+    function cpf(){
+        cpf = document.getElementById("cpf").value;
+
+        
+    }
+</script>
